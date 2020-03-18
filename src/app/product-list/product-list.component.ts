@@ -16,4 +16,7 @@ export class ProductListComponent implements OnInit {
   showDetail(product) {
     this.selected = product;
   }
+  removeItem(id){
+    return this.products = this.products.filter(product => product.id != id);
+  }
 }
