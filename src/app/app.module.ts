@@ -14,7 +14,7 @@ import { ProductManagerComponent } from './product-manager/product-manager.compo
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
-import { ProductService } from './product.service';
+import { ProductService } from './service/product.service';
 import { ProductAddComponent } from './product-add/product-add.component';
 
 @NgModule({

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Data } from './Mockdata';
-import { Product } from './Product';
+import { Data } from '../Mockdata';
+import { Product } from '../Product';
 
 @Injectable()
 export class ProductService {
@@ -12,7 +12,7 @@ export class ProductService {
     return this.products;
   }
   getProduct(id){
-    
+
   }
 
   addProduct(product){
