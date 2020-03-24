@@ -21,12 +21,12 @@ export class ProductListComponent implements OnInit {
     this.getProducts();
   }
   
-  showDetail(product) {
-    this.selected = product;
-  }
-  // removeItem(id){
-  //   return this.products = this.products.filter(product => product.id != id);
+  // showDetail(product) {
+  //   this.selected = product;
   // }
+  removeItem(id){
+    this.products = this.productService.removeProduct(id);
+  }
 
   getProducts(){
     this.products = this.productService.getProducts();
