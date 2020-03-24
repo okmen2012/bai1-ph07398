@@ -13,10 +13,14 @@ import { ProductComponent } from './product/product.component';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductService } from './product.service';
+import { ProductAddComponent } from './product-add/product-add.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent, CategoryComponent, SlideComponent, ProductListComponent, ProductComponent, ProductManagerComponent, AboutComponent, HomeComponent ],
-  bootstrap:    [ AppComponent ]
+  declarations: [ AppComponent, HelloComponent, CategoryComponent, SlideComponent, ProductListComponent, ProductComponent, ProductManagerComponent, AboutComponent, HomeComponent, ProductDetailComponent, ProductAddComponent ],
+  bootstrap:    [ AppComponent ],
+  providers: [ProductService]
 })
 export class AppModule { }
