@@ -14,11 +14,15 @@ export class ProductManagerComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.products = this.productService.getProducts();
+    this.getProducts();
   }
 
 
   removeItem(id){
     this.products = this.productService.removeProduct(id);
+  }
+
+  getProducts(){
+    this.productService.getProducts().subscribe(data => this.products = data);
   }
 }
