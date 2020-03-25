@@ -17,10 +17,12 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ProductService } from './service/product.service';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ServiceComponent } from './service/service.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule ],
-  declarations: [ AppComponent, HelloComponent, CategoryComponent, SlideComponent, ProductListComponent, ProductComponent, ProductManagerComponent, AboutComponent, HomeComponent, ProductDetailComponent, ProductAddComponent, NotFoundComponent ],
+  declarations: [ AppComponent, HelloComponent, CategoryComponent, SlideComponent, ProductListComponent, ProductComponent, ProductManagerComponent, AboutComponent, HomeComponent, ProductDetailComponent, ProductAddComponent, NotFoundComponent, ServiceComponent, ContactComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })
